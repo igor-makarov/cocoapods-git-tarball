@@ -17,7 +17,7 @@ module Pod
       alias_method :orig_download!, :download!
 
       def download!
-        if url.start_with?('https://github.com/') && !options[:submodules]
+        if url =~ %r{https://(.+:.+@|)github\.com/} && !options[:submodules]
           download_from_github!
         else
           orig_download!
