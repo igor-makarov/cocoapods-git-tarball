@@ -1,3 +1,5 @@
+[![Gem](https://img.shields.io/gem/v/cocoapods-git-tarball.svg)](https://rubygems.org/gems/cocoapods-git-tarball)
+
 # cocoapods-git-tarball
 
 `cocoapods-git-tarball` is a CocoaPods plugin that checks whether a pod is being downloaded from a git repo that supports tarballing, and uses HTTP download when this is possible. This saves a lot of time for large repos.  
